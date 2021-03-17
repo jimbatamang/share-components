@@ -1,5 +1,13 @@
 <template>
   <table>
+    <tr>
+        <th
+        v-for="(label, index) in header"
+        :key="index"
+        >
+        {{ label }}
+        </th>
+    </tr>
     <JTableRow
       v-for="(values, index) in items"
       :key="index"
@@ -13,6 +21,9 @@ import JTableRow from '@jimbatamang/j-table-row/JTableRow'
 export default {
   name: 'JTable',
   props: {
+    header: {
+      type: Array
+    },
     items: {
       type: Array,
       required: true
