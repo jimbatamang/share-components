@@ -26,6 +26,6 @@ tr {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
 }
 td {
-  padding: 8px;
+  padding: 10px;
 }
 </style>
